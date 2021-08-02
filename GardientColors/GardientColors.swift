@@ -1,7 +1,5 @@
 //  Creating GradientColor inside Stroyboard
 
-//  To add gradient color to Labels just change the class declaration from UIView to UILabel
-
 //  You can add more colors to the layer.colors array as much as you can
 
 //  Created by iSimoo on 8/2/21 . . . Happy Coding.
