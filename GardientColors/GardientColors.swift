@@ -2,7 +2,7 @@
 
 //  You can add more colors to the layer.colors array as much as you can
 
-//  Created by iSimoo on 8/2/21 . . . Happy Coding.
+//  Created by iSimoo on 8/2/21 . . Happy Coding.
 
 import UIKit
 
