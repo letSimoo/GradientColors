@@ -33,3 +33,14 @@ class GradientColors : UIView {
     }    
     
 }
+
+
+extension GradientColor {
+    
+    func setGradientColor(fstColor : CGColor, secColor : CGColor, location : NSNumber) {
+        let layer = self.layer as! CAGradientLayer
+        layer.colors = [fstColor, secColor]
+        layer.locations = [(Location) as NSNumber]
+    }
+    
+}
