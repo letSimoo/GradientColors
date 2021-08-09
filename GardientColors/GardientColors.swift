@@ -10,7 +10,7 @@ import UIKit
 
 class GradientColors : UIView {
     
-    @IBInspectable var FirstColor : UIColor = .clear {
+@IBInspectable var FirstColor : UIColor = .clear {
         didSet { updateView() }
     }
     
@@ -18,17 +18,18 @@ class GradientColors : UIView {
         didSet { updateView() }
     }
     
+    @IBInspectable var Location : Double = 0.6 {
+        didSet { updateView() }
+    }    
     
     override class var layerClass: AnyClass {
         get{ return CAGradientLayer.self }
-    }
+    }    
     
     func updateView() {
         let layer = self.layer as! CAGradientLayer
         layer.colors = [FirstColor.cgColor, SecondColor.cgColor]
-        //        layer.locations = [0.5]
-    }
-    
-    
+        layer.locations = [(Location) as NSNumber]
+    }    
     
 }
